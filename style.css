@@ -43,7 +43,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 23px 256px;
+    padding: 23px 9%;
+}
+
+.media-loction{
+    display: none;
 }
 
 .header-logo-img{
@@ -71,11 +75,10 @@ header{
     
 }
 
-
 @media (max-width: 1400px){
 
     header{
-        padding: 23px 180px;
+        padding: 23px 6%;
     }
 
     .header-link-ul{
@@ -83,16 +86,29 @@ header{
     }
 }
 
-@media (max-width: 1140px){
 
-    header{
-        padding: 23px 116px;
-    }
+@media (max-width: 960px){
 
-    .header-link-ul{
-        column-gap: 70px;
-    }
+   .header-menu-element{
+    display: none;
+   }
+
+   .media-loction{
+    display: block;
 }
+
+   header{
+    
+    
+}
+
+   .header-logo-img{
+    min-width: 126px;
+    min-height: 26px;
+   }
+}
+
+
 
 
 /*welcome*/
@@ -102,11 +118,15 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    background-position: center;
+    padding-top: 441px;
+    padding-bottom: 352px;
 }
 
 .welcome-wrap{
-    
-    padding: 353px 0px 440px 440px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 50px;
 }
 
 .logo-welcome{
@@ -149,28 +169,8 @@ header{
 }
 
 
-@media (max-width: 1700px){
-
-    .welcome-wrap{
-        
-        padding: 353px 0px 340px 330px;
-    }
-}
 
 
-@media (max-width: 1440px){
-
-    .welcome-wrap{
-        
-        padding: 253px 0px 240px 330px;
-    }
-}
 
 
-@media (max-width: 1140px){
 
-    .welcome-wrap{
-        
-        padding: 153px 0px 140px 130px;
-    }
-}
