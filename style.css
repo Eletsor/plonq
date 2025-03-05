@@ -1,0 +1,176 @@
+@font-face{
+    font-family: 'GothamPro';
+    src: url('./fonts/GothamPro.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'GothamProlight';
+    src: url('./fonts/GothamPro-Light.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+}
+
+body{
+    font-family: 'GothamProlight', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+   
+}
+
+:root{
+    --container-width:1300px;
+    --text-color:#000000;
+    --text-color-wh:#FFFFFF;
+    --color-gold:Gold;
+
+}
+
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 256px;
+}
+
+.header-logo-img{
+    min-width: 88px;
+    min-height: 20px;
+    align-items: center;
+}
+
+.header-link-ul{
+    display: flex;
+    column-gap: 124px;
+    align-items: center;
+}
+
+.header-menu-elemnt{
+    
+}
+
+.header-menu-link{
+    color: var(--text-color);
+    font-size: 13px;
+    padding-bottom: 5px;
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 400;
+    
+}
+
+
+@media (max-width: 1400px){
+
+    header{
+        padding: 23px 180px;
+    }
+
+    .header-link-ul{
+        column-gap: 90px;
+    }
+}
+
+@media (max-width: 1140px){
+
+    header{
+        padding: 23px 116px;
+    }
+
+    .header-link-ul{
+        column-gap: 70px;
+    }
+}
+
+
+/*welcome*/
+
+.welcome-block{
+    background-image: url("./img/Image-Plonq-500.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.welcome-wrap{
+    
+    padding: 353px 0px 440px 440px;
+}
+
+.logo-welcome{
+
+}
+
+.welcome-tittle{
+    padding-top: 35px;
+    color: var(--text-color-wh);
+    font-size: 32px;
+    font-family: 'GothamProlight', sans-serif;
+    font-weight: ;
+}
+
+.welcome-buttons{
+    padding-top: 60px;
+    display: flex;
+    column-gap: 125px;
+    align-items: center;
+}
+
+.welcome-link{
+    color: var(--text-color-wh);
+    font-family: 'GothamProlight', sans-serif;
+    font-size: 15px;
+}
+
+.welcome-button{
+    padding: 10px 52px;
+    border: 1px solid var(--text-color-wh);
+    border-radius: 100px;
+    color: var(--text-color-wh);
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.welcome-button:hover{
+    border: 1px solid rgb(185, 184, 184);
+    color: rgb(224, 224, 224);
+}
+
+
+@media (max-width: 1700px){
+
+    .welcome-wrap{
+        
+        padding: 353px 0px 340px 330px;
+    }
+}
+
+
+@media (max-width: 1440px){
+
+    .welcome-wrap{
+        
+        padding: 253px 0px 240px 330px;
+    }
+}
+
+
+@media (max-width: 1140px){
+
+    .welcome-wrap{
+        
+        padding: 153px 0px 140px 130px;
+    }
+}
