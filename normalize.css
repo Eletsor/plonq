@@ -6,7 +6,14 @@
  ::after {
    box-sizing: border-box;
  }
- 
+
+ input,
+ textarea,
+ button,
+ select,
+ a {
+     -webkit-tap-highlight-color: transparent;
+ }
  /**
    Убираем внутренние отступы слева тегам списков,
    у которых есть атрибут class

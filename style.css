@@ -109,6 +109,7 @@ header{
 
    .menu-burger{
     display: block;
+    -webkit-tap-highlight-color: transparent;
    }
 
    .header-logo-img{
