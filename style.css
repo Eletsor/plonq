@@ -263,19 +263,28 @@ header{
 
 @media (max-width: 960px){
     .welcome-block{
-        background-position: center;
-        padding-top: 136px;
-        padding-bottom: 460px;
+        background-image: url("./img/Image-Plonq-mobile1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 1136px;
+        
         
     }
 
     .welcome-wrap{
         max-width: 380px;
+        min-height: 54px;
         margin: 0 auto;
         padding-left: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 150px;
+        
     }
     
     .logo-welcome{
@@ -290,29 +299,37 @@ header{
         font-size: 25px;
         font-family: 'GothamProlight', sans-serif;
         text-align: center;
+        
     }
     
     .welcome-buttons{
-        padding-top: 60px;
+        padding-top: 0px;
         display: flex;
         column-gap: 125px;
         align-items: center;
-        bottom: 0;
+        position: relative;
+        top: 730px;
+        
+        
     }
     
     .welcome-link{
-        color: var(--text-color-wh);
+        color: #264F53;
         font-family: 'GothamProlight', sans-serif;
         font-size: 15px;
     }
     
     .welcome-button{
-        padding: 10px 52px;
-        border: 1px solid var(--text-color-wh);
+        padding: 8px 56px;
+        border: 1px solid #264F53;
         border-radius: 100px;
-        color: var(--text-color-wh);
+        color: #264F53;
         font-size: 13px;
         transition: 0.2s;
+        letter-spacing: 0%;
+        width: 186px;
+        text-align: center;
+        
     }
 }
 
