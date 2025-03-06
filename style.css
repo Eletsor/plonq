@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'GothamPro';
-    src: url('./fonts/GothamPro.woff2') format('woff2');
+    src: url('fonts/GothamPro.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face{
     font-family: 'GothamProlight';
-    src: url('./fonts/GothamPro-Light.woff2') format('woff2');
+    src: url('fonts/GothamPro-Light.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -172,8 +172,9 @@ header{
     position: absolute;
     display: grid;
     gap: 12px;
-    padding: 80px 0 40px;
+    padding: 80px 0px 40px;
     margin: 0;
+    
     background: rgb(255, 255, 255);
     list-style-type: none;
     transform: translateX(100%);
@@ -206,7 +207,7 @@ header{
 /*welcome*/
 
 .welcome-block{
-    background-image: url("./img/Image-Plonq-500.png");
+    background-image: url("img/Image-Plonq-500.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -263,7 +264,7 @@ header{
 
 @media (max-width: 960px){
     .welcome-block{
-        background-image: url("./img/Image-Plonq-mobile1.png");
+        background-image: url("img/Image-Plonq-mobile1.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
