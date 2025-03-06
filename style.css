@@ -168,7 +168,7 @@ header{
   }
   .menu-list {
     top: 0;
-    left: 760px;
+    right: 0px;
     position: absolute;
     display: grid;
     gap: 12px;
@@ -336,3 +336,15 @@ header{
 
 
 
+@media (max-width: 400px){
+    .welcome-buttons{
+        padding-top: 0px;
+        display: flex;
+        column-gap: 35px;
+        align-items: center;
+        position: relative;
+        top: 730px;
+        
+        
+    }
+}
