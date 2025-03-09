@@ -245,6 +245,7 @@ header{
     color: var(--text-color-wh);
     font-family: 'GothamProlight', sans-serif;
     font-size: 15px;
+    font-family: 'GothamPro', sans-serif;
 }
 
 .welcome-button{
@@ -346,6 +347,170 @@ header{
         position: relative;
         top: 730px;
         
+        
+    }
+}
+
+
+/*x-block*/
+
+.x-wrapper{
+    padding-top: 201px;
+    width: 937px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 55px;
+}
+
+.x-left{
+    padding-top: 193px;
+}
+
+.x-logo{
+
+}
+
+.x-logo-img{
+
+}
+
+.x-tittle{
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    max-width: 402px;
+    padding-top: 60px;
+}
+
+.x-buttons{
+    padding-top: 68px;
+    display: flex;
+    column-gap: 98px;
+}
+
+.x-link{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: #000000;
+    font-family: 'GothamPro', sans-serif;
+}
+
+.x-link:after{
+    content: "";
+    background-image: url("img/Arrow.svg");
+    width: 5px;
+    height: 8px;
+    position: relative;
+    top: 8px;
+    bottom: 7px;
+    left: 15px;
+    
+}
+
+.x-button{
+    font-family: 'GothamPro', sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: var(--color-gold);
+
+}
+
+@media (max-width: 960px){
+    .x-wrapper{
+        padding-top: 147px;
+        width: 379px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+    }
+
+    .x-left{
+        padding-top: 0px;
+        
+    }
+
+    .x-logo{
+        width: 379px;
+    }
+
+    .x-logo-img{
+        margin: 0 auto;
+        width: 196px;
+    }
+
+    .x-tittle{
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        max-width: 379px;
+        padding-top: 30px;
+        text-align: center;
+        
+    }
+
+    .x-right{
+        padding-top: 90px;
+    }
+
+    .x-buttons{
+        position: relative;
+        top: 715px;
+        padding-top: 0;
+        
+    }
+}
+
+@media (max-width: 400px){
+    .x-wrapper{
+        padding-top: 71px;
+        width: 272px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+    }
+
+    .x-left{
+        padding-top: 0px;
+        
+    }
+
+    .x-logo{
+        width: 272px;
+    }
+
+    .x-logo-img{
+        margin: 0 auto;
+        width: 121px;
+    }
+
+    .x-tittle{
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0%;
+        max-width: 272px;
+        padding-top: 20px;
+        text-align: center;
+        
+    }
+
+    .x-right{
+        padding-top: 0px;
+    }
+
+    .x-buttons{
+        position: relative;
+        top: 435px;
+        padding-top: 0;
+        column-gap: 0px;
+        justify-content: space-between;
         
     }
 }
