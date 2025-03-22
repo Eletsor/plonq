@@ -374,8 +374,11 @@ header{
         align-items: center;
         position: relative;
         top: 730px;
-        
-        
+    }
+
+    .welcome-button{
+        width: 100%;
+        padding: 6px 36px;
     }
 }
 
@@ -540,5 +543,100 @@ header{
         column-gap: 0px;
         justify-content: space-between;
         
+    }
+}
+
+
+/*cards*/
+
+.cards-wrapper{
+    max-width: 1016px;
+    margin: 0 auto;
+    padding-top: 198px;
+}
+
+.cards-elements{
+    display: flex;
+    column-gap: 115px;
+    
+    
+}
+
+.card-element{
+    display: flex;
+    
+}
+
+.card-info{
+    padding: 125px 0 0 20px;
+}
+
+.card-info-p{
+    padding: 54px 0 0 0;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    max-width: 208px;
+}
+
+.card-price{
+    padding: 18px  0 43px 0 ;
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.card-button{
+    padding: 12px 67px;
+    border: 1px solid black;
+    border-radius: 100px;
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px){
+    .cards-elements{
+        column-gap: 20px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 960px){
+
+    .card-element{
+        max-width: 385px;
+        margin: 0 auto;
+    }
+    
+    .cards-elements{
+        flex-wrap: wrap;
+        column-gap: 204px;
+    }
+
+    .logo-plonq-card{
+        width: 176px;
+        height: 26px;
+    }
+    
+    .card-info-p{
+        max-width: 162px;
+        padding-top: 35px;
+    }
+
+    .card-price{
+        font-size: 18px;
+        padding: 28px 0 35px 0;
+    }
+
+    .card-button{
+        padding: 7px 35px;
     }
 }
