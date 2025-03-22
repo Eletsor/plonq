@@ -558,7 +558,7 @@ header{
 .cards-elements{
     display: flex;
     column-gap: 115px;
-    
+    flex-wrap: wrap;
     
 }
 
@@ -597,6 +597,10 @@ header{
     font-weight: 700;
 }
 
+.card-img-mobile{
+    display: none;
+}
+
 @media (max-width: 1100px){
     .cards-elements{
         column-gap: 20px;
@@ -614,6 +618,7 @@ header{
     .card-element{
         max-width: 385px;
         margin: 0 auto;
+        padding: 0 15px;
     }
     
     .cards-elements{
@@ -638,5 +643,54 @@ header{
 
     .card-button{
         padding: 7px 35px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .card-element{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .card-element:nth-child(2){
+        padding-top: 122px;
+    }
+
+    .logo-plonq-card{
+        position: absolute;
+        bottom: 545px;
+    }
+
+    .card-info{
+        padding: 0px 0 0 0;
+    }
+
+    .card-img{
+        display: none;
+    }
+
+    .card-img-mobile{
+        display: block;
+    }
+
+    .card-info-p{
+        padding: 0;
+        font-size: 12px;
+        width: 186px;
+    }
+
+    .card-price{
+        padding: 12px 0 8px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .card-img-wrapper{
+        width: 151px;
+    }
+    
+    .card-button{
+        padding: 7px 45px;
     }
 }
