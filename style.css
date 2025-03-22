@@ -648,6 +648,10 @@ header{
 
 
 @media (max-width: 400px){
+
+    .cards-wrapper{
+        padding-bottom: 50px;
+    }
     .card-element{
         flex-direction: column;
         position: relative;
@@ -655,7 +659,7 @@ header{
 
     .card-element:nth-child(2){
         padding-top: 122px;
-        padding-bottom: 50px;
+        
     }
 
     .logo-plonq-card{
