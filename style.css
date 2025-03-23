@@ -779,6 +779,7 @@ header{
     .location-wrapper{
         max-width: 672px;
         margin: 0 auto;
+        padding-top: 133px;
     }
 
     .location-img-vh{
