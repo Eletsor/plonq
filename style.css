@@ -1010,9 +1010,9 @@ header{
 }
 
 .footer-wrapper{
-    padding: 90px 0 0 256px;
+    padding: 90px 256px 60px 256px;
     display: flex;
-    column-gap: 213px;
+    column-gap: 180px;
     
 }
 
@@ -1033,6 +1033,7 @@ header{
 
 .logos-elements{
     padding-top: 112px;
+    width: 160px;
 }
 
 .link-up{
@@ -1083,4 +1084,67 @@ header{
 
 .links-li:nth-child(3){
     padding: 17px 0 17px 0;
+}
+
+
+
+/*radio*/
+.form_toggle {
+	display: flex;
+	overflow: hidden;
+    
+}
+.form_toggle-item {
+	float: right;
+	display: flex;
+    
+}
+.form_toggle-item input[type=radio] {
+	display: none;
+}
+.form_toggle-item label {
+	display: inline-block;
+	padding: 0px 15px;   
+	line-height: 34px;    
+	border: 1px solid #999;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;   
+    
+}
+ 
+.form_toggle .item-1 label {
+	border-radius: 6px 0 0 6px;
+}
+.form_toggle .item-2 label {
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid #999;
+}
+ 
+/* Checked */
+.form_toggle .item-1 input[type=radio]:checked + label {
+	background: #bbffbb;
+}
+.form_toggle .item-2 input[type=radio]:checked + label {
+	background: #bbffbb;
+}
+
+/*radio*/
+
+
+
+.info-element{
+    padding: 85px 0 0 0;
+}
+
+.footer-inst{
+    float: right;
+}
+
+.information{
+    font-size: 13px;
+    line-height: 21px;
+    text-align: right;
+    color: #AAAAAA;
+    padding-top: 68px;
 }
