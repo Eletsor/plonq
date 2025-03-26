@@ -955,7 +955,7 @@ header{
     .apk-element-img-vh{
         display: block;
         padding: 70px 0 76px 0;
-        width: 17vh;
+        width: 42%;
     }
 
     .device-element-info{
@@ -1003,3 +1003,84 @@ header{
 
 
 
+/*footer*/
+
+.footer{
+    padding-top: 264px;
+}
+
+.footer-wrapper{
+    padding: 90px 0 0 256px;
+    display: flex;
+    column-gap: 213px;
+    
+}
+
+.footer-logo-img{
+    width: 88px;
+    height: 20px;
+    
+}
+
+.logos-link{
+    color: var(--text-color);
+    column-gap: 20px;
+}
+
+.logos-element:first-child{
+    padding-bottom: 29px;
+}
+
+.logos-elements{
+    padding-top: 112px;
+}
+
+.link-up{
+    display: flex;
+    column-gap: 200px;
+    
+}
+
+.subscribe-tittle{
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+.subscribe-button{
+    padding: 10px 30px;
+    background-color: var(--text-color);
+    border-radius: 4px;
+    font-size: 13px;
+    color: var(--text-color-wh);
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.links-wrapper{
+    padding-top: 85px;
+    display: flex;
+    column-gap: 90px;
+}
+
+.links-tittle{
+    padding-bottom: 23px;
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+}
+
+.links-li a{
+    font-size: 13px;
+    line-height: 21px;
+    color: #AAAAAA;
+}
+
+.links-li{
+    max-width: 160px;
+}
+
+.links-li:nth-child(3){
+    padding: 17px 0 17px 0;
+}
