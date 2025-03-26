@@ -954,7 +954,8 @@ header{
 
     .apk-element-img-vh{
         display: block;
-        padding: 76px 0 76px 0;
+        padding: 70px 0 76px 0;
+        width: 17vh;
     }
 
     .device-element-info{
@@ -963,14 +964,16 @@ header{
     
     .device-element{
         justify-content: space-between;
+        padding: 0 20px 0 20px;
     }
 
     .apk-element{
         justify-content: space-between;
+        padding: 0 20px 0 20px;
     }
     
     .apk-element-info{
-        padding: 93px 20px 93px 0px;
+        padding: 93px 0px 93px 0px;
         
     }
 
@@ -994,5 +997,9 @@ header{
         max-width: 120px;
         font-size: 12px;
         line-height: 19px;
+        padding: 20px 0 28px 0;
     }
 }
+
+
+
