@@ -1010,9 +1010,13 @@ header{
 }
 
 .footer-wrapper{
-    padding: 90px 256px 60px 256px;
+    padding: 90px 10px 87px 10px;
     display: flex;
     column-gap: 180px;
+    max-width: 1409px;
+    margin: 0 auto;
+    
+    
     
 }
 
@@ -1062,6 +1066,11 @@ header{
     padding-top: 85px;
     display: flex;
     column-gap: 90px;
+    
+}
+
+.links-element{
+    width: 120px;
 }
 
 .links-tittle{
@@ -1129,6 +1138,10 @@ header{
 	background: #bbffbb;
 }
 
+#leng-mb{
+    display: none;
+}
+
 /*radio*/
 
 
@@ -1147,4 +1160,182 @@ header{
     text-align: right;
     color: #AAAAAA;
     padding-top: 68px;
+}
+
+.footer-politic{
+    max-width: 1409px;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0 auto;
+    color: #AAAAAA;
+    padding-bottom:58px ;
+}
+
+@media (max-width: 1400px){
+    .footer-wrapper{
+        justify-content: space-between;
+        column-gap: 0;
+        position: relative;
+    }
+}
+
+@media (max-width: 1100px){
+    .footer-wrapper{
+        flex-direction: column;
+        column-gap: 40px;
+        max-width: 672px;
+    }
+
+    .footer-logo-img{
+        display: none;
+    }
+
+    .subscribe-tittle{
+        font-size: 12px
+    }
+
+    .subscribe-button{
+        font-size: 10px;
+        padding: 2px 12px;
+    }
+    .footer-logos{
+        position: absolute;
+        top: 345px;
+    }
+
+    .footer-info{
+        
+    }
+
+    .logos-elements{
+        display: flex;
+        width: 420px;
+        column-gap: 32px;
+    }
+
+    .info-element{
+        padding-top: 40px;
+    }
+
+    .links-wrapper{
+        margin: 0 auto;
+        max-width: 672px;
+    }
+
+    .link-up{
+        max-width: 672px;
+        margin: 0 auto;
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .information{
+        padding-top: 25px;
+        max-width: 230px;
+        float: right;
+    }
+
+    .form_toggle{
+        display: none;
+    }
+
+    .footer-links{
+        max-width: 672px;
+        margin: 0 auto;
+    }
+
+    .footer-politic{
+        max-width: 672px;
+        font-size: 11px;
+    }
+    
+    
+}
+
+@media (max-width: 700px){
+
+    .footer{
+        padding-top: 60px;
+    }
+
+    .footer-wrapper{
+        max-width: 320px;
+        padding: 0;
+    }
+
+    .links-wrapper{
+        padding-top: 26px;
+        flex-wrap: wrap;
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .links-ul{
+        padding-top: 21px;
+        width: 120px;
+    }
+
+    .links-tittle{
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+
+    .links-li a{
+        font-size: 10px;
+        line-height: normal;
+    }
+
+    .links-li:nth-child(3){
+        padding: 11px 0 11px 0;
+    }
+
+    .footer-politic{
+        max-width: 320px;
+        font-size: 8px;
+        text-align: left;
+        line-height: normal;
+    }
+
+    .info-element{
+        padding-top: 90px;
+    }
+
+    .footer-inst{
+        float: left;
+        width: 20px;
+        height: 20px;
+    }
+
+    .information{
+        padding: 0;
+        font-size: 8px;
+        line-height: 13px;
+        max-width: 152px;
+    }
+
+    .footer-logos{
+        top: 280px;
+    }
+
+    .logos-img{
+        width: 20px;
+        height: 20px;
+        
+    }
+
+    .logos-tittle{
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .logos-elements{
+        max-width: 320px;
+        column-gap: 93px;
+        
+    }
+
+    .footer-politic{
+        padding: 32px 0 30px 0;
+    }
 }
