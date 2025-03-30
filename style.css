@@ -1245,6 +1245,7 @@ header{
     .footer-logos{
         position: absolute;
         top: 345px;
+        display: none;
     }
 
     .footer-info{
@@ -1292,6 +1293,17 @@ header{
         max-width: 672px;
         font-size: 11px;
     }
+
+    .logos-elements{
+        padding-top: 50px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .footer-inst{
+        float: left;
+    }
+
     
     
 }
@@ -1341,7 +1353,7 @@ header{
     }
 
     .info-element{
-        padding-top: 90px;
+        padding-top: 10px;
     }
 
     .footer-inst{
@@ -1375,6 +1387,7 @@ header{
     .logos-elements{
         max-width: 320px;
         column-gap: 93px;
+        padding-top: 30px;
         
     }
 
