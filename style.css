@@ -123,102 +123,48 @@ header{
 }
 
 /*burger*/
-
-   .menu-burger{
-    display: block;
-    -webkit-tap-highlight-color: transparent;
-   }
-
-   .header-logo-img{
-    min-width: 126px;
-    min-height: 26px;
-   }
-
-   .burger-menu{
-    display: block;
-   }
-
-   .burger-checkbox {
-    position: absolute;
-    visibility: hidden;
-  }
-  .burger {
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    border: none;
-    background: transparent;
-    width: 30px;
-    height: 26px;
-  }
-  .burger::before,
-  .burger::after {
-    content: '';
-    left: 0;
-    position: absolute;
-    display: block;
+.overlay {
+    height: 0%;
     width: 100%;
-    height: 4px;
-    border-radius: 10px;
-    background: #000;
-  }
-  .burger::before {
+    position: fixed;
+    z-index: 1;
     top: 0;
-    box-shadow: 0 11px 0 #000;
-    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
-  }
-  .burger::after {
-    bottom: 0;
-    transition: bottom .3s .15s, transform .3s;
-  }
-  .burger-checkbox:checked + .burger::before {
-    top: 11px;
-    transform: rotate(45deg);
-    box-shadow: 0 3px 0 rgba(0,0,0,0);
-    transition: box-shadow .15s, top .3s, transform .3s .15s;
-  }
-  .burger-checkbox:checked + .burger::after {
-    bottom: 11px;
-    transform: rotate(-45deg);
-    transition: bottom .3s, transform .3s .15s;
-  }
-  .menu-list {
-    top: 0;
-    left: 0px;
-    position: absolute;
-    display: grid;
-    gap: 12px;
-    padding: 80px 0px 40px;
-    margin: 0;
-    
-    background: rgb(255, 255, 255);
-    list-style-type: none;
-    transform: translateX(-100%);
-    transition: .3s;
-    width: 200px;
-    border-radius: 4px;
-  }
-  .menu-item {
-    display: block;
-    padding: 8px;
-    color: var(--text-color);
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-  }
-  .menu-item:hover {
-    background: rgba(255,255,255,.2)
-  }
-  .burger-checkbox:checked ~ .menu-list {
-    transform: translateX(0);
-  }
-
-
-/*welcome-block*/
-
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
 }
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 15px 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #c4c4c4;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
 
 
 @media (max-width: 400px){
@@ -237,10 +183,6 @@ header{
         height: 30px;
     }
 }
-
-
-
-
 
 
 /*welcome*/
@@ -291,10 +233,6 @@ header{
     color: #cfcfcf;
     
 }
-
-
-
-
 
 .welcome-button{
     padding: 10px 52px;
@@ -418,14 +356,6 @@ header{
     padding-top: 193px;
 }
 
-.x-logo{
-
-}
-
-.x-logo-img{
-
-}
-
 .x-tittle{
     font-weight: 300;
     font-size: 32px;
@@ -454,7 +384,6 @@ header{
 .x-link:hover{
      color: #3a3a3a;
      background: transparent;
-     
 }
 
 .x-link:after{
@@ -466,7 +395,6 @@ header{
     top: 8px;
     bottom: 7px;
     left: 15px;
-    
 }
 
 .x-button{
@@ -538,7 +466,6 @@ header{
 
     .x-left{
         padding-top: 0px;
-        
     }
 
     .x-logo{
@@ -558,7 +485,6 @@ header{
         max-width: 272px;
         padding-top: 20px;
         text-align: center;
-        
     }
 
     .x-right{
@@ -571,7 +497,6 @@ header{
         padding-top: 0;
         column-gap: 0px;
         justify-content: space-between;
-        
     }
 }
 
@@ -588,12 +513,10 @@ header{
     display: flex;
     column-gap: 115px;
     flex-wrap: wrap;
-    
 }
 
 .card-element{
     display: flex;
-    
 }
 
 .card-info{
@@ -641,12 +564,6 @@ header{
     }
 }
 
-
-
-
-
-
-
 @media (max-width: 960px){
 
     .card-element{
@@ -683,9 +600,6 @@ header{
 
 @media (max-width: 400px){
 
-    .cards-wrapper{
-        
-    }
     .card-element{
         flex-direction: column;
         position: relative;
@@ -693,7 +607,6 @@ header{
 
     .card-element:nth-child(2){
         padding-top: 122px;
-        
     }
 
     .logo-plonq-card{
@@ -740,12 +653,10 @@ header{
     padding-top: 272px;
     max-width: 1408px;
     margin: 0 auto;
-    
 }
 
 .location-img{
     padding: 0 15px 0 15px;
-    
 }
 
 .location-img-mobile{
@@ -795,7 +706,6 @@ header{
         padding-top: 200px;
         max-width: 672px;
         margin: 0 auto;
-        
     }
     
     .location-img{
@@ -842,7 +752,6 @@ header{
         font-size: 12px;
         line-height: 21px;
         letter-spacing: 0%;
-        
      }
 
      .location-button-wrapper{
@@ -862,7 +771,6 @@ header{
 
 .device-element{
     display: flex;
-    
 }
 
 .apk-element{
@@ -871,12 +779,10 @@ header{
 
 .device-element-info{
     padding: 136px 0 129px 120px;
-    
 }
 
 .apk-element-info{
     padding: 172px 0 80px 120px;
-    
 }
 
 .device-head{
@@ -1052,16 +958,12 @@ header{
     display: flex;
     column-gap: 180px;
     max-width: 1409px;
-    margin: 0 auto;
-    
-    
-    
+    margin: 0 auto; 
 }
 
 .footer-logo-img{
     width: 88px;
     height: 20px;
-    
 }
 
 .logos-link{
@@ -1081,7 +983,6 @@ header{
 .link-up{
     display: flex;
     column-gap: 200px;
-    
 }
 
 .subscribe-tittle{
@@ -1104,7 +1005,6 @@ header{
     padding-top: 85px;
     display: flex;
     column-gap: 90px;
-    
 }
 
 .links-element{
@@ -1144,7 +1044,6 @@ header{
 .form_toggle {
 	display: flex;
 	overflow: hidden;
-    
 }
 .form_toggle-item {
 	float: right;

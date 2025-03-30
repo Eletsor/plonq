@@ -10,16 +10,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="menu-burger">
-            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
-            <label for="burger-checkbox" class="burger"></label>
-            <ul class="menu-list">
-                <li><a href="#" class="menu-item">Главная</a><li>
-                <li><a href="#" class="menu-item">О нас</a><li>
-                <li><a href="#" class="menu-item">Команда</a><li>
-                <li><a href="#" class="menu-item">Контакты</a><li>
-            </ul>
-        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+              <a href="#">Продукты</a>
+              <a href="#">Приложение</a>
+              <a href="#">Дистрибуция</a>
+              <a href="#">Где купить</a>
+            </div>
+          </div>
+
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+          
+          <script>
+          function openNav() {
+              document.getElementById("myNav").style.height = "100%";
+          }
+          
+          function closeNav() {
+              document.getElementById("myNav").style.height = "0%";
+          }
+          </script>
         <a class="heder-logo" href="/"><img class="header-logo-img" src="img/Logo.svg" alt="logo" width="88" height="19"></a>
         <a class="media-loction" href=""><img class="header-pin-img" src="img/Pin-icon.svg" alt=""></a>
         
