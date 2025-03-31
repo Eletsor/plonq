@@ -10,27 +10,21 @@
 </head>
 <body>
     <header class="header">
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <div class="overlay-content">
-              <a href="#">Продукты</a>
-              <a href="#">Приложение</a>
-              <a href="#">Дистрибуция</a>
-              <a href="#">Где купить</a>
-            </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+        
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Продукты</a></li>
+              <li><a class="menu__item" href="#">Приложение</a></li>
+              <li><a class="menu__item" href="#">Дистрибуция</a></li>
+              <li><a class="menu__item" href="#">Где купить</a></li>
+            </ul>
           </div>
-
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
           
-          <script>
-          function openNav() {
-              document.getElementById("myNav").style.height = "100%";
-          }
           
-          function closeNav() {
-              document.getElementById("myNav").style.height = "0%";
-          }
-          </script>
         <a class="heder-logo" href="/"><img class="header-logo-img" src="img/Logo.svg" alt="logo" width="88" height="19"></a>
         <a class="media-loction" href=""><img class="header-pin-img" src="img/Pin-icon.svg" alt=""></a>
         
@@ -246,6 +240,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
