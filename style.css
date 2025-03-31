@@ -35,12 +35,11 @@ body{
     --container-width:1300px;
     --text-color:#000000;
     --text-color-wh:#FFFFFF;
-    --color-gold:Gold;
+    --color-gold:#C8BB93;
 
 }
 
-/*header*/
-
+/*header*/ 
 .hamburger-menu{
     display: none;
 }
@@ -82,6 +81,11 @@ header{
 .header-menu-link:hover{
     color: #747474;
 }
+
+.active{
+    color: var(--color-gold);
+}
+ 
 
 @media (max-width: 1400px){
 
@@ -194,8 +198,9 @@ header{
 
 
 }
-
 /*burger*/
+
+
 
 
 @media (max-width: 400px){
@@ -216,8 +221,8 @@ header{
 }
 
 
-/*welcome*/
-
+/*welcome*/ 
+/* #region */
 .welcome-block{
     background-image: url("img/Image-Plonq-500.png");
     background-repeat: no-repeat;
@@ -972,13 +977,14 @@ header{
         padding: 20px 0 28px 0;
     }
 }
+/* #endregion */
 
 
 
 /*footer*/
 
 .footer{
-    padding-top: 264px;
+    padding-top: 64px;
 }
 
 .footer-wrapper{
@@ -992,6 +998,10 @@ header{
 .footer-logo-img{
     width: 88px;
     height: 20px;
+}
+
+.footer-logos-mb{
+    display: none;
 }
 
 .logos-link{
@@ -1175,14 +1185,14 @@ header{
         display: none;
     }
 
-    .footer-info{
-        
-    }
-
     .logos-elements{
         display: flex;
         width: 420px;
         column-gap: 32px;
+    }
+
+    .footer-logos-mb{
+        display: block;
     }
 
     .info-element{
@@ -1321,4 +1331,44 @@ header{
     .footer-politic{
         padding: 32px 0 30px 0;
     }
+}
+
+
+
+/*app-html*/
+
+.problem{
+    padding-top: 264px;
+}
+
+.problem-wrapper{
+    display: flex;
+    max-width: 1231px;
+    margin: 0 auto;
+    column-gap: 74px;
+}
+
+.problem-tittle{
+    max-width: 408px;
+}
+
+.problem-parag:nth-child(3){
+    padding: 21px 0 21px 0;
+}
+
+.problem-parag:nth-child(2){
+    font-family: 'GothamPro', sans-serif;
+}
+
+.problem-parag{
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.problem-tittle-h{
+    font-family: 'GothamPro', sans-serif;
+    padding-bottom: 38px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
 }

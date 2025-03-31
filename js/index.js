@@ -15,3 +15,13 @@ $('.menu').click(function() {
       $(this).addClass('active');
     }
   });
+
+ /*menu*/
+
+ document.querySelectorAll("header-link-ul. a").forEach((el) => {
+    if (window.location.pathname.indexOf(el.getAttribute("href")) > -1) {
+        el.classList.add("active");
+    }
+});
+
+ /*menu*/
