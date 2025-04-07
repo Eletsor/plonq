@@ -165,7 +165,7 @@ header{
     .menu__btn > span::after {
         content: '';
         top: 8px;
-        right: ;
+        
     }
     .menu__box {
         display: block;
@@ -1567,25 +1567,23 @@ header{
 }
 
 .versus-info{
-    grid-column-start: 2;
     padding-top: 168px;
     max-width: 364px;
-    margin: 0 auto;
 }
 
 .versus-info p:nth-child(3){
     margin-bottom: 54px;
 }
 
-.versus-img-wrapper{
-    grid-row-start: 1;
+.versus-info-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 88px;
 }
 
-.versus-info-wrapper{
-    display: grid;
-    grid-template-columns: 776px 450px;
-    grid-template-rows: 605px ;
-    padding-top: 88px;
+.versus-button-mb{
+    display: none;
 }
 
 #grey::before{
@@ -1622,4 +1620,81 @@ header{
     border-radius: 50%;
     top: 16px;
     right: 30px;
+}
+
+@media (max-width: 1264px){
+
+    .versus{
+        padding-top: 215px;
+    }
+
+    .versus-wrapper{
+        max-width: 672px;
+        margin: 0 auto;
+    }
+    .versus-info-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: clamp(15px, 3.16vw, 40px);
+        
+    }
+
+    .versus-info{
+        padding-top: 0px;
+        max-width: 364px;
+        padding-left: 35px;
+    }
+
+    .versus-info p{
+        font-size: 15px;
+        margin-bottom: 17px;
+    }
+
+    .versus-img-wrapper{
+        padding-top: clamp(30px, 6.80vw, 86px);
+    }
+
+    .versus-img-wrapper img{
+        padding-bottom: clamp(15px, 3.16vw, 40px);
+    }
+
+    .versus-button-mb{
+        display: block;
+        max-width: 280px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .versus-button{
+       display: none;
+    }
+
+    .versus-wrapper h2{
+        font-size: 23px;
+        line-height: 33px;
+        margin: 0;
+    }
+    
+    .versus-info p:nth-child(3){
+        margin-bottom: 0px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .versus-wrapper{
+        padding: 0 10px;
+    }
+
+    .versus-button-mb{
+        display: block;
+        max-width: 230px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 13px;
+        font-weight: 700;
+    }
 }
