@@ -285,6 +285,10 @@ header{
     background-color: rgba(165, 165, 165, 0.445);
 }
 
+.welcome-button:active{
+    transform: scale(0.98);
+}
+
 
 
 @media (max-width: 960px){
@@ -588,6 +592,11 @@ header{
 
 .card-button:hover{
     box-shadow: 3px 2px 5px rgba(148, 148, 148, 0.582);
+}
+
+.card-button:active{
+    box-shadow: 3px 2px 5px rgba(148, 148, 148, 0.582);
+    transform: scale(0.98);
 }
 
 .card-img-mobile{
