@@ -6,7 +6,7 @@ height: auto;
 .welcome-list{
     display: flex;
     justify-content: space-between;
-    column-gap: 150px;
+    
     
 }
 
@@ -26,3 +26,39 @@ height: auto;
 .navbar-img{
     position: relative;
 }
+
+.navbar-tittle{
+    padding-top: 530px;
+    padding-left: 464px;
+    
+}
+
+.welcome__tittle{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #298B7AD1;
+    padding-bottom: 88px;
+}
+
+.welcome-link{
+    font-size: 15px;
+    line-height: 21px;
+    color: #298B7AD1;
+    padding-left: 38px;
+    margin-top: 88px;
+    position: relative;
+}
+
+.welcome-link::before{
+    content: "";
+    width: 12px;
+    height: 88px;
+    position: absolute;
+    background-image: url('img/arrow-down.svg');
+    bottom: 5px;
+    left: 0;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
