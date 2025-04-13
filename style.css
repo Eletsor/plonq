@@ -14,6 +14,16 @@
     font-display: swap;
 }
 
+.js .wow {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: all 0.5s 0.5s ease-out;
+  }
+  /* Wow.js puts in a "animated" class */
+  .js .animated {
+    opacity: 1;
+    transform: none;
+  }
 
 
 a{
@@ -2111,6 +2121,7 @@ header{
     font-size: 40px;
     line-height: 45px;
     font-weight: 400;
+    margin-bottom: 38px;
 }
 
 .update-info p{
@@ -2170,6 +2181,5 @@ header{
         max-width: 350px;
         margin-bottom: 15px;
     }
-
-    
 }
+
