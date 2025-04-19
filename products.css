@@ -522,3 +522,84 @@ line-height: 21px;
         top: -40px;
     }
 }
+
+
+/*elegant*/
+
+.elegant-wrapper{
+    padding-top: 382px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+
+
+.elegant-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elegant-element h3{
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 250px;
+}
+
+.elegant-wrapper h2{
+    position: relative;
+}
+
+.elegant-wrapper h2::before{
+    content: "";
+    position: absolute;
+    background-image: url('img/elegant-element-01.svg');
+    width: 88px;
+    height: 66px;
+    background-repeat: no-repeat;
+    left: -102px;
+    top: -10px;
+}
+
+.elegant-img{
+    position: relative;
+}
+
+.elegant-img::before{
+    content: "left";
+    font-size: 0px;
+    position: absolute;
+    background-image: url('img/elegant-mack-lf.svg');
+    width: 76px;
+    height: 633px;
+    background-repeat: no-repeat;
+    left: -80px;
+}
+
+.elegant-img-before::before{
+    content: "top";
+    font-size: 0px;
+    position: absolute;
+    background-image: url('img/elegant-mck-tp.svg');
+    width: 144px;
+    height: 81px;
+    background-repeat: no-repeat;
+    left: 162px;
+    top: -80px;
+}
+
+.elegant-img-before-tp::before{
+    content: "toptp";
+    font-size: 0px;
+    position: absolute;
+    background-image: url('img/elegant-mck-tps.svg');
+    width: 144px;
+    height: 81px;
+    background-repeat: no-repeat;
+    top: -80px;
+    left: 373px;
+}
