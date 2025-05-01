@@ -1058,7 +1058,6 @@ line-height: 21px;
         padding-top: 140px;
         padding-bottom: 182px;
         z-index: 2;
-        text-align: ;
         max-width: 400px;
         margin: 0 auto;
     }
@@ -1081,6 +1080,7 @@ line-height: 21px;
         font-size: 11px;
         line-height: 16px;
         margin: 0 auto;
+        
     }
     
     .steam-wrapper::before{
@@ -1113,8 +1113,8 @@ line-height: 21px;
 
 @media(max-width:520px){
     .steam-wrapper{
-        margin: 0 ;
-        max-width: 100%; 
+        margin: 0  ;
+        max-width: 100%;
     }
 
     .steam-img{
@@ -1123,26 +1123,53 @@ line-height: 21px;
 
     .steam-img-mb{
         display: block;
+        width: 100%;
+    }
+
+    .steam-list{
+        
+    }
+
+    .steam-element h2::before{
+        content: "";
+        background-image: url('img/stem-03.svg');
+        position: absolute;
+        width: 96px;
+        transform: scale(0.9);
+        height: 66px;
+        background-repeat: no-repeat;
+        top: -10px;
+        left:-10px;
     }
 
 
     .steam-wrapper::before{
-        top: 130px;
-        left:70px;
+        display: none;
     }
 
     .steam-wrapper h2{
         
-        padding-left: 120px;
-        max-width: 300px;
+        padding-left: 70px;
+        max-width: 400px;
     }
 
     .steam-element p{
         max-width: 240px;
         padding-top: 190px;
-        padding-left: 50px;
+        padding-left: 0px;
         font-size: 11px;
         line-height: 16px;
         margin: 0 auto;
+    }
+
+    .steam-tittle{
+        padding-left: 0px;
+        padding-top: 140px;
+        padding-bottom: 0px;
+        z-index: 2;
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+        left: 40px;
     }
 }
