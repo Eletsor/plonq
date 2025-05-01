@@ -714,6 +714,7 @@ line-height: 21px;
 
 .puff-wrapper{
     background-color: #000000;
+    
 }
 
 .puff-wrapper p{
@@ -922,4 +923,203 @@ line-height: 21px;
         left: 10px;
     }
 
+}
+
+
+/*puff-steam*/
+
+.puff-steam{
+    
+}
+
+.steam-wrapper{
+    max-width: 1216px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.steam-tittle{
+    padding-left: 130px;
+    padding-top: 440px;
+}
+
+.steam-wrapper h2{
+    color: #FFFFFF;
+    max-width: 240px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    position: relative;
+}
+
+.steam-wrapper::before{
+    content: "";
+    background-image: url('img/stem-03.svg');
+    position: absolute;
+    width: 96px;
+    transform: scale(1.3);
+    height: 66px;
+    background-repeat: no-repeat;
+    top: 460px;
+    left: 45px;
+}
+
+.steam-list{
+   display: flex;
+   justify-content: space-between;
+    
+}
+
+.element-img{
+    position: relative;
+    
+}
+
+.steam-img{
+   width: 580px;
+   height: 1242px;
+}
+
+.steam-element p{
+    max-width: 480px;
+    padding-top: 100px;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+@media(max-width:1180px){
+    .steam-wrapper{
+        max-width: 700px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    .steam-tittle{
+        padding-left: 80px;
+        padding-top: 140px;
+        padding-bottom: 150px;
+    }
+
+    .steam-wrapper h2{
+        color: #FFFFFF;
+        max-width: 240px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 34px;
+        position: relative;
+    }
+
+
+    .steam-element p{
+        max-width: 233px;
+        padding-top: 132px;
+        font-size: 15px;
+        line-height: 21px;
+    }
+    
+    .steam-wrapper::before{
+        content: "";
+        background-image: url('img/stem-03.svg');
+        position: absolute;
+        width: 96px;
+        transform: scale(1.3);
+        height: 66px;
+        background-repeat: no-repeat;
+        top: 165px;
+        left: 0px;
+    }
+
+    .steam-img{
+        width: 332px;
+        height: 679px;
+    }
+
+}
+
+
+@media(max-width:740px){
+    .steam-wrapper{
+        max-width: 460px;
+        margin: 0 auto;
+        position: relative;
+        
+        
+    }
+
+
+    .steam-tittle{
+        padding-left: 0px;
+        padding-top: 140px;
+        padding-bottom: 182px;
+        z-index: 2;
+        text-align: ;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .steam-wrapper h2{
+        color: #FFFFFF;
+        max-width: 200px;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 114.9%;
+        padding-left: 50px;
+        position: relative;
+    }
+
+
+    .steam-element p{
+        max-width: 208px;
+        padding-top: 190px;
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0 auto;
+    }
+    
+    .steam-wrapper::before{
+        content: "";
+        background-image: url('img/stem-03.svg');
+        position: absolute;
+        width: 96px;
+        transform: scale(0.9);
+        height: 66px;
+        background-repeat: no-repeat;
+        top: 130px;
+        left:100px;
+    }
+
+
+    .steam-list{
+        flex-direction: column;
+    }
+
+    .element-img{
+       
+    }
+    
+
+.steam-img{
+   position: absolute;
+   bottom: 0;
+   opacity: 30%;
+   right: 5%;
+}
+}
+
+
+@media(max-width:440px){
+    .steam-wrapper::before{
+        content: "";
+        background-image: url('img/stem-03.svg');
+        position: absolute;
+        width: 96px;
+        transform: scale(0.9);
+        height: 66px;
+        background-repeat: no-repeat;
+        top: 130px;
+        left:50px;
+    }
 }
