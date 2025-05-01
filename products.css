@@ -980,6 +980,10 @@ line-height: 21px;
    height: 1242px;
 }
 
+.steam-img-mb{
+    display: none;
+}
+
 .steam-element p{
     max-width: 480px;
     padding-top: 100px;
@@ -1072,7 +1076,7 @@ line-height: 21px;
 
 
     .steam-element p{
-        max-width: 208px;
+        max-width: 240px;
         padding-top: 190px;
         font-size: 11px;
         line-height: 16px;
@@ -1088,12 +1092,12 @@ line-height: 21px;
         height: 66px;
         background-repeat: no-repeat;
         top: 130px;
-        left:100px;
+        left:-30px;
     }
 
 
     .steam-list{
-        flex-direction: column;
+        
     }
 
     .element-img{
@@ -1101,25 +1105,44 @@ line-height: 21px;
     }
     
 
-.steam-img{
-   position: absolute;
-   bottom: 0;
-   opacity: 30%;
-   right: 5%;
-}
+    .steam-img{
+   
+    }
 }
 
 
-@media(max-width:440px){
+@media(max-width:520px){
+    .steam-wrapper{
+        margin: 0 ;
+        max-width: 100%; 
+    }
+
+    .steam-img{
+        display: none;
+    }
+
+    .steam-img-mb{
+        display: block;
+    }
+
+
     .steam-wrapper::before{
-        content: "";
-        background-image: url('img/stem-03.svg');
-        position: absolute;
-        width: 96px;
-        transform: scale(0.9);
-        height: 66px;
-        background-repeat: no-repeat;
         top: 130px;
-        left:50px;
+        left:70px;
+    }
+
+    .steam-wrapper h2{
+        
+        padding-left: 120px;
+        max-width: 300px;
+    }
+
+    .steam-element p{
+        max-width: 240px;
+        padding-top: 190px;
+        padding-left: 50px;
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0 auto;
     }
 }
