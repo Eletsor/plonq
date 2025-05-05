@@ -1458,184 +1458,226 @@ line-height: 21px;
 
 /*safe*/
 
-.safe{
-
+.safe {
+    width: 100%; 
+    overflow: hidden;
 }
 
 .safe-wrapper{
-    margin: 0;
-    padding-top: 140px;
-    max-width: 100%;
-    margin-left: auto;
+    max-width: 1680px;
     position: relative;
-}
-
-.safe-back{
-    float: right;
-    
-}
-
-
-.safe-back-mb{
-    display: none;
-}
-
-.safe-elements{
-    position: absolute;
-    padding-left: 110px;
-    left: 100px;
+    margin-left:  auto;
+    padding-top: 140px;
 }
 
 .safe-tittle{
+    position: absolute;
+    top: 315px;
+    padding-left: 150px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 115px;
+}
+
+.safe-bg{
+    float: right;
+}
+
+.safe-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.safe-tittle h2{
     font-weight: 400;
     font-size: 28px;
     line-height: 34px;
-    padding-top: 150px;
-    max-width: 340px;
+    max-width: 338px;
+    margin: 0;
+    position: relative;
 }
 
-.safe-tittle::before{
+.safe-tittle h2::before{
     content: "";
     background-image: url('img/safe-05.svg');
     background-repeat: no-repeat;
-    width: 104px;
+    width: 106px;
     height: 66px;
     position: absolute;
-    left: 10px;
-    top: 160px;
+    left: -110px;
+    top: 5px;
 }
 
-.safe-tittle-two{
-    padding-top: 100px;
+.safe-tittle p{
     font-weight: 400;
     font-size: 22px;
     line-height: 32px;
     max-width: 360px;
-    
+    margin: 0;
 }
 
-.safe-logo{
-    padding-top: 120px;
-}
-
-@media(max-width:1400px){
-    .safe-elements{
-        left: 10px;
-    }
-}
-
-
-@media(max-width:1150px){
+@media(max-width:1200px){
     .safe-wrapper{
-        margin: 0;
-        padding-top: 40px;
         max-width: 100%;
-        margin-left: auto;
-        position: relative;
+        padding-top: 40px;
     }
-
 
     .safe-tittle{
+        position: absolute;
+        top: 100px;
+        padding-left: 150px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .safe-tittle h2{
         font-weight: 400;
         font-size: 23px;
         line-height: 36px;
-        padding-top: 45px;
         max-width: 274px;
+        margin: 0;
+        position: relative;
     }
     
-    .safe-elements{
-        left: 50px;
+    .safe-tittle h2::before{
+        content: "";
+        background-image: url('img/safe-05.svg');
+        background-repeat: no-repeat;
+        width: 106px;
+        height: 66px;
+        position: absolute;
+        left: -110px;
+        top: 5px;
     }
-
-    .safe-tittle-two{
-        padding-top: 50px;
+    
+    .safe-tittle p{
         font-weight: 400;
         font-size: 15px;
         line-height: 21px;
         max-width: 264px;
+        margin: 0;
     }
 
     .safe-logo{
-        padding-top: 50px;
         width: 44px;
+        height: auto;
     }
-
-    .safe-tittle::before{
-        content: "";
-        background-image: url('img/safe-05.svg');
-        background-repeat: no-repeat;
-        width: 93px;
-        height: 66px;
-        position: absolute;
-        left:10px;
-        top: 55px;
-    }
-    
 }
 
-
-@media(max-width:850px){
-
-    .safe-wrapper{
+@media(max-width:900px){
+    .safe-tittle p{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        max-width: 200px;
         margin: 0;
-        padding-top: 160px;
-        max-width: 1592px;
-        margin-left: auto;
-        position: relative;
     }
 
     .safe-tittle{
+        position: absolute;
+        top: 100px;
+        padding-left: 115px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+
+@media(max-width:750px){
+
+    .safe-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .safe-tittle{
+        position: relative;
+        top: 80px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-top: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .safe-bg{
+        padding-top: 0;
+        min-width: 641px;
+        height: auto;
+        float: left;
+    }
+
+    .safe-tittle h2{
         font-weight: 400;
         font-size: 18px;
-        line-height: 114.999%;
-        padding-top: 0px;
-        max-width: 185px;
-        margin: 0 auto;
-        padding-left: 50px;
+        line-height: 114.99%;
+        max-width: 274px;
+        margin: 0;
         position: relative;
     }
-
-    .safe-tittle-two{
-        padding-top: 50px;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 16px;
-        max-width: 300px;
-        padding-left: 40px;
-    }
-
-    .safe-tittle::before{
+    
+    .safe-tittle h2::before{
         content: "";
         background-image: url('img/safe-05-mb.svg');
         background-repeat: no-repeat;
         width: 70px;
         height: 46px;
         position: absolute;
-        left:-45px;
+        left: -80px;
         top: 0px;
+    }
+    
+    .safe-tittle p{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        max-width: 264px;
+        margin: 0;
+    }
+}
+
+
+@media(max-width:570px){
+    .safe-wrapper{
+        
+    }
+
+    .safe-tittle{
+        min-width: 272px;
+        gap: 30px;
+    }
+
+    .safe-bg{
+        min-width: 570px;
+    }
+    
+    .safe-tittle h2{
+        max-width: 185px;
+        margin-left: auto;
+    }
+
+    .safe-tittle p{
+        max-width: 272px;
+        font-size: 11px;
+        line-height: 16px;
     }
 
     .safe-logo{
-        margin-left: 40px;
+        width: 50px;
     }
-
-    .safe-elements{
-        position: static; 
-        padding: 0;
-        max-width: 350px; 
-        margin: 0 auto;    
 }
 
-    .safe-back{
-        display: none;
+.tastes-wrapper{
+    padding-top: 100px;
 }
 
-.safe-back-mb{
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    padding-top: 300px;
-}
-    
-}
+
