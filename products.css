@@ -1872,12 +1872,15 @@ line-height: 21px;
         width: 91px; /* Фиксированная ширина */
         height: 500px;
         overflow: hidden; /* Обрезает всё за пределами */
+        display: inline-block;
+        line-height: 0;
     }
     
     .tastes-img{
         width: 100%;
         height: 400px;
         object-fit: cover; /* или contain */
+        
     }
 
     .tastes-list{
