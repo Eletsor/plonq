@@ -1818,7 +1818,7 @@ line-height: 21px;
 
 @media(max-width:500px){
     .tastes-wrapper{
-        max-width: 273px;
+        max-width: 350px;
     }
 
     .tittle-wrapper{
@@ -1837,12 +1837,13 @@ line-height: 21px;
     }
 
     .tastes-tittle-wrapper{
-        max-width: 272px;
+        max-width: 350px;
         margin: 0 auto;
     }
 
     .tastes-tittle{
-        right: 0px;
+        right: 5px;
+        height: 30px;
         font-size: 11px;
     }
 
