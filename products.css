@@ -1676,8 +1676,212 @@ line-height: 21px;
     }
 }
 
+
+/*tastes*/
+
 .tastes-wrapper{
-    padding-top: 100px;
+    padding-top: clamp(100px, 10.41vw, 200px);
+    max-width: 1164px;
+    margin: 0 auto;
+}
+
+.tastes-tittle-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tastes-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    max-width: 600px;
+}
+
+.tittle-wrapper{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0%;
+    position: relative;
+}
+
+.tittle-wrapper::before{
+    content: "";
+    background-image: url("img/tastes-06.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 104px;
+    height: 66px;
+    left: -100px;
+    top: -10px;
 }
 
 
+
+.tastes-tittle{
+    transform-origin:  center;
+    transform: rotate(90deg);
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.tastes-tittle::before{
+    content: '—';
+    position: absolute;
+    width: 2px;
+    height: 3px;
+    left: -15px;
+
+}
+
+.tastes-elements{
+    padding-top: clamp(50px, 6.25vw, 120px);
+}
+
+.tastes-element{
+    width: 150px; /* Фиксированная ширина */
+    height: 500px;
+    overflow: hidden; /* Обрезает всё за пределами */
+}
+
+.tastes-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* или contain */
+}
+
+.tastes-img path {
+    fill: #FFFFFF; /* Принудительно белый */
+  }
+.tastes-list{
+    display: flex;
+}
+
+
+@media(max-width:1400px){
+
+    .tastes-wrapper{
+        max-width: 800px;
+    }
+    .tastes-list{
+        flex-wrap: wrap;
+        max-width: 450px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .tastes-tittle{
+        padding: 0;
+        position: absolute;
+        right: 20px;
+        bottom: 200px;
+    }
+
+    .tastes-element{
+        position: relative;
+    }
+
+    .green-tea, .grape, .energy{
+        right: 0;
+    }
+
+    
+}
+
+
+@media(max-width:1000px){
+    .tastes-wrapper{
+        max-width: 620px;
+    }
+}
+
+@media(max-width:800px){
+    .tittle-wrapper{
+        margin: 0 auto;
+        font-size: 23px;
+        max-width: 320px;
+    }
+
+    .tastes-text{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .tastes-tittle-wrapper{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:500px){
+    .tastes-wrapper{
+        max-width: 273px;
+    }
+
+    .tittle-wrapper{
+        margin: 0 ;
+        margin-left: auto;
+        font-size: 18px;
+        max-width: 185px;
+        line-height: 114.99%;
+    }
+
+    .tastes-text{
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .tastes-tittle-wrapper{
+        max-width: 272px;
+        margin: 0 auto;
+    }
+
+    .tastes-tittle{
+        right: -10px;
+        font-size: 11px;
+    }
+
+    .green-tea, .grape, .energy{
+        right: -20px;
+    }
+
+    .tittle-wrapper::before{
+        content: "";
+        background-image: url("img/tastes-06-mb.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 70px;
+        height: 46px;
+        left: -90px;
+        top: 0px;
+    }
+
+    .tastes-element{
+        width: 80px; /* Фиксированная ширина */
+        height: 500px;
+        overflow: hidden; /* Обрезает всё за пределами */
+    }
+    
+    .tastes-img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover; /* или contain */
+    }
+
+    .tastes-list{
+        
+        justify-content: space-between;
+    }
+
+    
+    .cola, .cherry {
+        margin-left: auto;
+        margin-right: auto;
+        flex-grow: 0; /* Отключаем растягивание */
+      }
+}
