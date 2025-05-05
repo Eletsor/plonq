@@ -1842,12 +1842,16 @@ line-height: 21px;
     }
 
     .tastes-tittle{
-        right: -10px;
+        right: 0px;
         font-size: 11px;
     }
 
-    .green-tea, .grape, .energy{
-        right: -20px;
+    .green-tea{
+        right: -15px;
+    }
+
+    .grape, .energy{
+        right: -10px;
     }
 
     .tittle-wrapper::before{
@@ -1862,7 +1866,7 @@ line-height: 21px;
     }
 
     .tastes-element{
-        width: 80px; /* Фиксированная ширина */
+        width: 91px; /* Фиксированная ширина */
         height: 500px;
         overflow: hidden; /* Обрезает всё за пределами */
     }
