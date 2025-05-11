@@ -1870,7 +1870,7 @@ line-height: 21px;
 
     .tastes-element{
         width: 91px; /* Фиксированная ширина */
-        height: 500px;
+        height: 400px;
         overflow: hidden; /* Обрезает всё за пределами */
         display: inline-block;
         line-height: 0;
@@ -1895,3 +1895,426 @@ line-height: 21px;
         flex-grow: 0; /* Отключаем растягивание */
       }
 }
+
+/*solid*/
+
+.solid{
+    background-color: #000000;
+}
+
+.solid-wrapper{
+    max-width: 1008px;
+    margin: 0 auto;
+    padding-top: clamp(90px, 7.5vw, 144px);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.solid-tittle{
+    font-weight: 300;
+    font-size: clamp(18px, 2.5vw, 28px);
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.solid-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solid-img-mb{
+    display: none;
+}
+
+
+.feat-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки равной ширины */
+    gap: 90px; /* Отступ между элементами */
+    column-gap: 250px;
+    max-width: 800px;
+}
+
+.feat-element{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feat-element h3{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.feat-element p{
+    color: #cacaca;
+    font-weight: 400px;
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.feat-battery{
+    padding-left: 75px;
+}
+
+.feat-battery::before{
+    content: "";
+    background-image: url("img/solid-battery.svg") ;
+    position: absolute;
+    height: 50px;
+    background-repeat: no-repeat;
+    width: 26px;
+    top: 7px;
+    left: 0px;
+    
+}
+
+
+.feat-smoke::before{
+    content: "";
+    background-image: url("img/solid-smoke.svg") ;
+    position: absolute;
+    height: 55px;
+    background-repeat: no-repeat;
+    width: 32px;
+    top: 3px;
+    left: -80px;
+}
+
+.feat-wawe{
+    padding-left: 75px;
+}
+
+.feat-wawe::before{
+    content: "";
+    background-image: url("img/solid-cpl.svg") ;
+    position: absolute;
+    height: 50px;
+    background-repeat: no-repeat;
+    width: 36px;
+    top: 5px;
+    left: 0px;
+    
+}
+
+.feat-rubles{
+
+}
+
+.feat-rubles::before{
+    content: "";
+    background-image: url("img/solid-rubles.svg") ;
+    position: absolute;
+    height: 50px;
+    background-repeat: no-repeat;
+    width: 47px;
+    top: 5px;
+    left: -90px;
+    
+}
+
+.feat-nic{
+    padding-left: 75px;
+}
+
+.feat-nic::before{
+    content: "";
+    background-image: url("img/solid-wawe.svg") ;
+    position: absolute;
+    height: 55px;
+    background-repeat: no-repeat;
+    width: 14px;
+    top: 5px;
+    left: 10px;
+    
+}
+
+
+@media(max-width:960px){
+    .solid-wrapper{
+        max-width: 545px;
+        margin: 0 auto;
+        padding-top: clamp(10px, 7.5vw, 20px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .solid-tittle{
+        font-weight: 300;
+        font-size: clamp(18px, 2.5vw, 23px);
+        line-height: 36px;
+        color: #FFFFFF;
+        padding-top: 50px;
+    }
+
+    .feat-element{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .feat-element h3{
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        margin: 0;
+    }
+    
+    .feat-element p{
+        color: #cacaca;
+        font-weight: 400px;
+        font-size: 15px;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    .solid-img{
+        max-width: 144px;
+    }
+
+    .feat-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки равной ширины */
+        gap: 56px; /* Отступ между элементами */
+        column-gap: 90px;
+        max-width: 350px;
+    }
+
+    .feat-battery{
+        padding-left: 35px;
+    }
+    
+    .feat-battery::before{
+        content: "";
+        background-image: url("img/solid-battery.svg") ;
+        background-size: contain;
+        position: absolute;
+        height: 30px;
+        background-repeat: no-repeat;
+        width: 16px;
+        top: 5px;
+        left: 0px;
+        
+    }
+    
+    
+    .feat-smoke::before{
+        content: "";
+        background-image: url("img/solid-smoke.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 37px;
+        background-repeat: no-repeat;
+        width: 20px;
+        top: 3px;
+        left: -40px;
+    }
+    
+    .feat-wawe{
+        padding-left: 35px;
+    }
+    
+    .feat-wawe::before{
+        content: "";
+        background-image: url("img/solid-cpl.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 30px;
+        background-repeat: no-repeat;
+        width: 20px;
+        top: 5px;
+        left: 0px;
+        
+    }
+    
+    .feat-rubles{
+    
+    }
+    
+    .feat-rubles::before{
+        content: "";
+        background-image: url("img/solid-rubles.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 26px;
+        background-repeat: no-repeat;
+        width: 23px;
+        top: 5px;
+        left: -40px;
+        
+    }
+    
+    .feat-nic{
+        padding-left: 35px;
+    }
+    
+    .feat-nic::before{
+        content: "";
+        background-image: url("img/solid-wawe.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 35px;
+        background-repeat: no-repeat;
+        width: 12px;
+        top: 5px;
+        left: 5px;
+        
+    }
+}
+
+@media(max-width:500px){
+    .solid-wrapper{
+        max-width: 273px;
+        margin: 0 auto;
+        padding-top: clamp(10px, 7.5vw, 20px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .solid-tittle{
+        font-weight: 300;
+        font-size: clamp(18px, 2.5vw, 23px);
+        line-height: 36px;
+        color: #FFFFFF;
+        padding-top: 50px;
+    }
+
+    .feat-element{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .feat-element h3{
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 21px;
+        margin: 0;
+    }
+    
+    .feat-element p{
+        color: #cacaca;
+        font-weight: 400px;
+        font-size: 15px;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    .solid-img{
+        max-width: 92px;
+        display: none;
+    }
+
+    .solid-img-mb{
+        display: block;
+    }
+
+    .feat-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2 колонки равной ширины */
+        gap: 56px; /* Отступ между элементами */
+        column-gap: 90px;
+        max-width: 350px;
+    }
+
+    .feat-battery{
+        padding-left: 35px;
+    }
+    
+    .feat-battery::before{
+        content: "";
+        background-image: url("img/solid-battery.svg") ;
+        background-size: contain;
+        position: absolute;
+        height: 30px;
+        background-repeat: no-repeat;
+        width: 16px;
+        top: 5px;
+        left: 0px;
+        
+    }
+    
+    .feat-smoke{
+        padding-left: 35px;
+    }
+    
+    .feat-smoke::before{
+        content: "";
+        background-image: url("img/solid-smoke.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 37px;
+        background-repeat: no-repeat;
+        width: 20px;
+        top: 3px;
+        left: -2px;
+    }
+    
+    .feat-wawe{
+        padding-left: 35px;
+    }
+    
+    .feat-wawe::before{
+        content: "";
+        background-image: url("img/solid-cpl.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 30px;
+        background-repeat: no-repeat;
+        width: 20px;
+        top: 5px;
+        left: 0px;
+        
+    }
+    
+    .feat-rubles{
+        padding-left: 35px;
+    }
+    
+    .feat-rubles::before{
+        content: "";
+        background-image: url("img/solid-rubles.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 26px;
+        background-repeat: no-repeat;
+        width: 23px;
+        top: 5px;
+        left: -2px;
+        
+    }
+    
+    .feat-nic{
+        padding-left: 35px;
+    }
+    
+    .feat-nic::before{
+        content: "";
+        background-image: url("img/solid-wawe.svg") ;
+        position: absolute;
+        background-size: contain;
+        height: 35px;
+        background-repeat: no-repeat;
+        width: 12px;
+        top: 5px;
+        left: 5px;
+        
+    }
+}
+
+
+.tasters{
+    padding-top: 100px;
+}
+
+
