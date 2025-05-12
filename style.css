@@ -116,9 +116,14 @@ header{
     }
 
     
+    
 
    .header-nav{
     display: none;
+   }
+
+   .distr-header-nav{
+    display: block;
    }
 
    .media-loction{

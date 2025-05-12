@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plonq</title>
+    <title>Plonq distribution</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="distribution.css">
 </head>
 <body>
     <header class="header">
@@ -31,131 +31,62 @@
         <nav class="header-nav">
             <ul class="header-link-ul">
                 <li class="header-menu-element"><a class="header-menu-link" href="products.html">Продукты</a></li>
-                <li class="header-menu-element"><a class="header-menu-link active" href="app.html">Приложение</a></li>
-                <li class="header-menu-element"><a class="header-menu-link" href="distribution.html">Дистрибуция</a></li>
+                <li class="header-menu-element"><a class="header-menu-link " href="app.html">Приложение</a></li>
+                <li class="header-menu-element"><a class="header-menu-link active" href="distribution.html">Дистрибуция</a></li>
                 <li class="header-menu-element"><a class="header-menu-link" href="#">Где купить</a></li>
             </ul>
         </nav>
     </header>
-
+    <header class="distr-header">
+        <nav class="header-nav distr-header-nav">
+            <ul class="header-link-ul link-distr-header">
+                <li class="header-menu-element distr-header-element"><a class="header-menu-link distr-menu-link active" href="products.html">Связаться с нами</a></li>
+                <li class="header-menu-element distr-header-element"><a class="header-menu-link distr-menu-link " href="app.html">Оптовым покупателям</a></li>
+                <li class="header-menu-element distr-header-element"><a class="header-menu-link distr-menu-link" href="distribution.html">О компании</a></li>
+                <li class="header-menu-element distr-header-element"><a class="header-menu-link distr-menu-link" href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section class="problem">
-            <div class="problem-mb-app">
-                <img src="img/Image_smartphone-problem.png" alt="">
-            </div>
-            <div class="problem-wrapper">
-                <div class="problem-tittle">
-                    <h1 class="problem-tittle-h">Проблема</h1>
-                    <p class="problem-parag">Исследования показывают, что во всем мире около 1 млрд курильщиков, 70% из них хотят бросить курить, 40% действительно пытаются это сделать хотя бы раз в год, но достигают успеха только 5%.</p>
-                    <p class="problem-parag">Почему показатель успеха такой низкий? Ответ прост: существующие методы отказа от курения — не эффективны. <br><br>
-
-                        Большинство из них основано на медикаментах, заменителях никотина или силе воли. Такие методы редко помогают, а частота рецидивов после них высока. <br> <br>
-                        
-                        Все еще думаете бросить за один день?</p>
-                    <p class="problem-parag">К сожалению, практика показывает, что радикальный отказ от курения может привести не только к физическому дискомфорту, но и к серьезным психологическим расстройствам.</p>
-                
+        <section class="connect">
+            <div class="connect-wrapper">
+                <div class="connect-tittle">
+                    <h1>Связаться с нами</h1>
+                    <p>Мы рады вам помочь и ответить на любые вопросы о Plonq. <br> <br>Напишите нам в мессенджере и мы ответим в течение 5 минут или напишите письмо на почту info@plonq.ru и мы ответим не позднее чем через 24 часа. </p>
                 </div>
-                <div class="problem-img-info">
-                    <div class="problem-info-element">
-                        <p>5%</p>
-                        <p>Действительно бросают</p>
-                    </div>
-                    <div class="problem-info-element">
-                        <p>40%</p>
-                        <p>Пытаются бросить</p>
-                    </div>
-                    <div class="problem-info-element">
-                        <p>70%</p>
-                        <p>Хотят бросить</p>
-                    </div>
-                </div>
-                <div class="problem-img-block">
-                    <img class="problem-img" src="img/problem-main.png" alt="">
-                </div>
+                <div class="connect-form">
+                    <form id="contactForm">
+            <div class="form-group">
+                <label for="fullname" class="form-label required-field">ФИО</label>
+                <input type="text" id="fullname" class="form-input" placeholder="Иванов Иван Иванович" required>
             </div>
 
-        </section>
-        <section class="versus">
-            <div class="versus-wrapper">
-                <h2>Сравнение решений</h2>
-           <div class="versus-info-wrapper">
-            <div class="versus-info">
-                <p id="grey">Мобильные приложения на основе <br> поведенческой терапии</p>
-                <p id="green">Никотино-заменительная терапия</p>
-                <p id="blue">Медикаменты (Табекс, Чампикс и др.)</p>
-                <a class="card-button versus-button" href=""> Читать иследование</a>
+            <div class="form-group">
+                <label for="phone" class="form-label required-field">Телефон</label>
+                <input type="tel" id="phone" class="form-input" placeholder="+7 (999) 123-45-67" required>
             </div>
-            <div class="versus-img-wrapper">
-                <img src="img/Diagram-versus.png" alt="">
-                <a class="card-button versus-button-mb" href=""> Читать иследование</a>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-input" placeholder="example@mail.com">
             </div>
-           </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label required-field">Сообщение</label>
+                <textarea id="message" class="form-input" placeholder="Ваше сообщение..." required></textarea>
             </div>
-        </section>
-        <section class="number-ter">
-            <div class="number-ter-wrapper">
-                <ul class="number-list">
-                    <li class="number-element">
-                        <h3>Цифровой терапевт</h3>
-                        <p id="number-p1">PLONQ AI создан на основе поведенческой терапии, которая доказала свою эффективность.</p>
-                        <p id="number-p2">Алгоритм изучит вашу привычку к курению и поможет плавно снизить интенсивность вплоть до полного отказа, избегая симптомов отмены.</p>
-                    </li>
-                    <li class="iphone-img">
-                        <img src="img/iphone-mobile-img.jpg" alt="" >
-                       
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="slider-section">
-            <h3>Как это работает</h3>
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <div id="slide-1" class="slider-1">
-                        <img src="img/slider-img1.jpg" alt="">
-                        <div class="slider-info">
-                            <h3>Plonq Ai <br> изучает Вас</h3>
-                            <p>Первую неделю курите в привычном для себя ритме, пока алгоритм изучит вашу привычку.</p>
-                        </div>
-                    </div>
-                    <div id="slide-2" class="slider-2">
-                        <img src="img/slider-img1.jpg" alt="">
-                        <div class="slider-info">
-                            <h3>Plonq Ai <br> изучает Вас</h3>
-                            <p>Первую неделю курите в привычном для себя ритме, пока алгоритм изучит вашу привычку.</p>
-                        </div>
-                    </div>
-                    <div id="slide-3" class="slider-3">
-                        <img src="img/slider-img1.jpg" alt="">
-                        <div class="slider-info">
-                            <h3>Plonq Ai <br> изучает Вас</h3>
-                            <p>Первую неделю курите в привычном для себя ритме, пока алгоритм изучит вашу привычку.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
+
+            <button type="submit" class="submit-btn">Отправить</button>
+        </form>
                 </div>
             </div>
-            
-        </section>
-        <section class="update">
-            <div class="update-wrapper">
-                <ul class="update-list">
-                    <li class="update-info">
-                        <h3>Обновление</h3>
-                        <p>Раз за разом мы будем обновлять Plonq AI и делать управление курением все более эффективным.</p>
-                        <p>Для этого вам не нужно покупать новые устройства. Мы обо всем позаботились.</p>
-                        <p>Просто обновите PLONQ AI через мобильное приложение.</p>
-                        
-                    </li>
-                    <li class="update-img">
-                        <img src="img/update-section-img.jpg" alt="">
-                    </li>
-                </ul>
-            </div>
+            <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Форма отправлена!');
+            this.reset();
+        });
+    </script>
         </section>
         
     </main>
@@ -269,9 +200,6 @@
         </div>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-     </script>
+    
 </body>
 </html>
