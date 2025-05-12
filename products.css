@@ -1900,6 +1900,7 @@ line-height: 21px;
 
 .solid{
     background-color: #000000;
+    
 }
 
 .solid-wrapper{
@@ -1908,6 +1909,7 @@ line-height: 21px;
     padding-top: clamp(90px, 7.5vw, 144px);
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 
 .solid-tittle{
